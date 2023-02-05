@@ -1,5 +1,5 @@
 
-# rLocker
+# rLocker (RSA Locker)
 
 rLocker (RSA Locker) is a ransomware tool built in python. It uses the RSA encryption standard to encrypt a computers `C:\Users` files and `C:\Program Files` and `C:\Program Files (x86)`. Your key pair is stored on a [mongoDB](https://www.mongodb.com) database. rLocker communicates with a mainserver API to allow for restricted database access.
 
