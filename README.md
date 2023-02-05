@@ -6,6 +6,31 @@ rLocker (RSA Locker) is a ransomware tool built in python. It uses the RSA encry
 rLocker is the encryptor, with dLocker being the decryptor. A file called uuid.rlocker will be created when you have used rlocker, do not delete this file! This file
 contains your UUID and it can be difficult to decrupt the files without it!
 
+
+## Running the code
+
+To use the tools, first clone the repository
+
+```bash
+  git clone https://github.com/Ironislife98/rLocker.git
+```
+
+Then install the dependencies
+
+```bash
+  pip install -r requirements.txt
+```
+
+Then run the encryptor
+
+```bash
+  python rlocker.python
+```
+
+#### Don't do anything without explicit permission
+
+
+
 ## API Reference
 
 #### Add New Victim
